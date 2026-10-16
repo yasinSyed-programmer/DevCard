@@ -4,83 +4,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me | Yasin</title>
+    <title>About Me | Syed Yasin</title>
 </head>
-<body>
 
-    <header>
-        <h1>Hi, I'm Yasin 👋</h1>
-        <p>Aspiring Software Developer | AI & ML Student</p>
-    </header>
+<body style="margin:0; font-family:Arial, Helvetica, sans-serif; background:#0b1120; color:#f1f5f9;">
 
-    <hr>
+    <!-- NAVIGATION BAR -->
+    <nav style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:20px; padding:20px 7%; background:#111827; border-bottom:1px solid #263449;">
 
-    <main>
-        <section>
-            <h2>About Me</h2>
-            <p>
-                Hello! My name is Yasin, and I am pursuing
-                B.Tech in Computer Science and Engineering
-                with a specialization in Artificial Intelligence
-                and Machine Learning at RVR & JC College
-                of Engineering.
+        <a href="#home" style="font-size:26px; font-weight:bold; color:#38bdf8; text-decoration:none;">
+            Yasin<span style="color:white;">.</span>
+        </a>
+
+        <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:8px;">
+            <a href="#about" style="padding:11px 15px; border-radius:8px; color:#38bdf8; background:#172554; text-decoration:none;">About Me</a>
+            <a href="skills.html" style="padding:11px 15px; border-radius:8px; color:#cbd5e1; text-decoration:none;">My Skills</a>
+            <a href="#projects" style="padding:11px 15px; border-radius:8px; color:#cbd5e1; text-decoration:none;">Projects</a>
+            <a href="#contact" style="padding:11px 15px; border-radius:8px; color:#cbd5e1; text-decoration:none;">Contact</a>
+        </div>
+
+    </nav>
+
+    <!-- HERO SECTION -->
+    <main id="home" style="max-width:1200px; margin:auto; padding:60px 7%;">
+
+        <section id="about" style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:55px; min-height:65vh;">
+
+            <!-- LEFT: INTRODUCTION -->
+            <div style="flex:1 1 400px;">
+
+                <p style="color:#38bdf8; font-size:14px; font-weight:bold; letter-spacing:4px; text-transform:uppercase;">
+                    Welcome to my world
+                </p>
+
+                <h1 style="font-size:clamp(38px, 6vw, 64px); line-height:1.15; margin:18px 0;">
+                    Hey, I'm <span style="color:#38bdf8;">Syed Yasin.</span>
+                </h1>
+
+                <h2 style="font-size:clamp(20px, 3vw, 29px); color:#cbd5e1; font-weight:normal; line-height:1.5;">
+                    Student. Programmer. <span style="color:#a78bfa;">Future Innovator.</span>
+                </h2>
+
+                <p style="font-size:16px; line-height:1.9; color:#94a3b8; max-width:570px;">
+                    I'm pursuing B.Tech in Computer Science and Engineering
+                    with a specialization in Artificial Intelligence and
+                    Machine Learning at RVR & JC College of Engineering.
+                </p>
+
+                <p style="font-size:16px; line-height:1.9; color:#94a3b8; max-width:570px;">
+                    I enjoy programming, exploring new technologies, and
+                    understanding how things work behind the scenes.
+                    I'm working towards becoming a strong software developer
+                    by improving my fundamentals, solving problems, and
+                    turning what I learn into practical projects.
+                </p>
+
+                <div style="display:flex; flex-wrap:wrap; gap:15px; margin-top:30px;">
+
+                    <a href="#projects" style="display:inline-block; padding:15px 24px; background:#38bdf8; color:#0b1120; font-weight:bold; text-decoration:none; border-radius:8px;">
+                        Explore My Journey ↗
+                    </a>
+
+                    <a href="skills.html" style="display:inline-block; padding:14px 24px; border:1px solid #475569; color:#e2e8f0; text-decoration:none; border-radius:8px;">
+                        Discover My Skills
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- RIGHT: PROFILE IMAGE -->
+            <div style="flex:1 1 280px; display:flex; justify-content:center; align-items:center;">
+
+                <div style="position:relative; padding:12px; border:1px solid #38bdf8; border-radius:24px; background:linear-gradient(135deg,#172554,#164e63); box-shadow:0 0 45px rgba(56,189,248,0.12); max-width:350px; width:100%; box-sizing:border-box;">
+
+                    <img
+                        src="Dev.jpeg"
+                        alt="Portrait of Syed Yasin"
+                        style="display:block; width:100%; aspect-ratio:4/5; object-fit:cover; border-radius:17px;"
+                    >
+
+                    <div style="position:absolute; bottom:28px; left:25px; right:25px; padding:16px; background:rgba(11,17,32,0.92); border:1px solid #334155; border-radius:12px;">
+
+                        <p style="margin:0 0 5px; color:#38bdf8; font-size:12px; letter-spacing:2px;">
+                            CURRENTLY BUILDING
+                        </p>
+
+                        <p style="margin:0; color:#f1f5f9; font-size:15px; font-weight:bold;">
+                            Skills • Projects • Experience
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- QUICK INTRODUCTION CARDS -->
+        <section style="display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:18px; margin:50px 0;">
+
+            <div style="padding:25px; background:#111827; border:1px solid #263449; border-radius:14px;">
+                <p style="margin:0; font-size:13px; color:#38bdf8; letter-spacing:1px;">01 / EDUCATION</p>
+                <h3 style="margin:15px 0 8px;">CSE — AI & ML</h3>
+                <p style="margin:0; line-height:1.7; color:#94a3b8; font-size:14px;">
+                    RVR & JC College of Engineering
+                </p>
+            </div>
+
+            <div style="padding:25px; background:#111827; border:1px solid #263449; border-radius:14px;">
+                <p style="margin:0; font-size:13px; color:#a78bfa; letter-spacing:1px;">02 / INTEREST</p>
+                <h3 style="margin:15px 0 8px;">Software Development</h3>
+                <p style="margin:0; line-height:1.7; color:#94a3b8; font-size:14px;">
+                    Writing code and solving meaningful problems.
+                </p>
+            </div>
+
+            <div style="padding:25px; background:#111827; border:1px solid #263449; border-radius:14px;">
+                <p style="margin:0; font-size:13px; color:#34d399; letter-spacing:1px;">03 / DIRECTION</p>
+                <h3 style="margin:15px 0 8px;">Continuous Growth</h3>
+                <p style="margin:0; line-height:1.7; color:#94a3b8; font-size:14px;">
+                    Learning, building, and improving every day.
+                </p>
+            </div>
+
+        </section>
+
+        <!-- MY JOURNEY -->
+        <section id="projects" style="padding:55px 0;">
+
+            <p style="color:#38bdf8; font-size:13px; letter-spacing:3px; font-weight:bold;">
+                BEYOND THE CLASSROOM
             </p>
 
-            <p>
-                I enjoy learning programming, solving problems,
-                and exploring how technology can make life easier.
-                My goal is to become a skilled software developer
-                and build projects that solve real-world problems.
+            <h2 style="font-size:36px; margin:12px 0 20px;">
+                My Journey<span style="color:#38bdf8;">.</span>
+            </h2>
+
+            <p style="max-width:800px; color:#94a3b8; line-height:2; font-size:16px;">
+                My goal is to go beyond learning syntax and become someone
+                who can design, develop, test, and deliver useful software.
+                I'm strengthening my programming and DSA foundations,
+                learning development tools, exploring AI and ML, and
+                preparing to build projects that demonstrate what I can do.
             </p>
-        </section>
 
-        <section>
-            <h2>My Technical Skills</h2>
-            <ul>
-                <li>Java and Data Structures & Algorithms</li>
-                <li>Python Programming</li>
-                <li>HTML and Basic CSS</li>
-                <li>Git and GitHub Fundamentals</li>
-                <li>Artificial Intelligence and Machine Learning</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>My Goals</h2>
-            <ol>
-                <li>Improve my problem-solving skills.</li>
-                <li>Master Data Structures and Algorithms.</li>
-                <li>Learn backend development and databases.</li>
-                <li>Build useful real-world projects.</li>
-                <li>Become a successful software engineer.</li>
-            </ol>
-        </section>
-
-        <section>
-            <h2>My Hobbies and Interests</h2>
-            <ul>
-                <li>Learning new technologies</li>
-                <li>Coding and solving challenges</li>
-                <li>Exploring AI and Machine Learning</li>
-                <li>Playing basketball</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Connect With Me</h2>
-            <p>
-                GitHub:
-                <a href="https://github.com/" target="_blank">
-                    Visit GitHub
-                </a>
+            <p style="max-width:800px; color:#94a3b8; line-height:2; font-size:16px;">
+                I believe progress comes from curiosity, consistent practice,
+                and the willingness to learn from mistakes. This portfolio
+                is a part of that journey — a place to document my growth
+                and share what I create along the way.
             </p>
+
         </section>
+
+        <!-- CONTACT -->
+        <section id="contact" style="padding:40px 30px; text-align:center; background:linear-gradient(135deg,#172554,#111827); border:1px solid #334155; border-radius:18px;">
+
+            <p style="color:#38bdf8; letter-spacing:3px; font-size:13px; font-weight:bold;">
+                LET'S CONNECT
+            </p>
+
+            <h2 style="font-size:32px; margin:15px 0;">
+                Have an idea? Let's build something.
+            </h2>
+
+            <p style="color:#94a3b8; line-height:1.8;">
+                I'm interested in programming, technology, collaboration,
+                and opportunities to learn through real projects.
+            </p>
+
+            <a href="https://github.com/yasinSyed-programmer" target="_blank" rel="noopener noreferrer" style="display:inline-block; margin-top:15px; padding:14px 25px; background:#38bdf8; color:#0b1120; font-weight:bold; text-decoration:none; border-radius:8px;">
+                Find Me on GitHub ↗
+            </a>
+
+        </section>
+
     </main>
 
-    <hr>
+    <!-- FOOTER -->
+    <footer style="margin-top:50px; padding:35px 20px; text-align:center; background:#080d18; border-top:1px solid #263449;">
 
-    <footer>
-        <p>&copy; 2026 Yasin. All rights reserved.</p>
+        <h2 style="margin:0; font-size:26px;">
+            Syed Yasin<span style="color:#38bdf8;">.</span>
+        </h2>
+
+        <p style="margin:12px 0; color:#94a3b8; line-height:1.8;">
+            An aspiring developer with a passion for learning and building.
+        </p>
+
+        <p style="margin:20px 0 0; color:#64748b; font-size:13px;">
+            &copy; 2026 Syed Yasin. Designed with purpose, built with curiosity.
+        </p>
+
     </footer>
 
 </body>
