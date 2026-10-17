@@ -1,11 +1,17 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me | Syed Yasin</title>
 </head>
+
+<script>
+    function showMaintenance() {
+        alert("🚧 This page is currently under maintenance.\n\nWe will get back to you soon. Thank you for your patience!");
+    }
+</script>
 
 <body style="margin:0; font-family:Arial, Helvetica, sans-serif; background:#0b1120; color:#f1f5f9;">
 
@@ -17,9 +23,10 @@
 
         <div style="display: flex; gap: 15px;">
             <a href="AboutMe.html" style="text-decoration: none; color: white; padding: 10px 15px;">About Me</a>
-            <a href="Skills.html" style="text-decoration: none; color: white; padding: 10px 15px;" >MySkills</a>
+            <a href="Skills.html" style="text-decoration: none; color: white; padding: 10px 15px;">MySkills</a>
             <a href="Projects.html" style="text-decoration: none; color: white; padding: 10px 15px;">Projects</a>
-            <a href="#contact" style="text-decoration: none; color: white; padding: 10px 15px;" >ContactInfo</a>
+            <a href="#contact" style="text-decoration: none; color: white; padding: 10px 15px;"
+                onclick="showMaintenance()" ; return false ; >ContactInfo</a>
         </div>
 
     </nav>
@@ -27,12 +34,14 @@
     <!-- HERO SECTION -->
     <main id="home" style="max-width:1200px; margin:auto; padding:60px 7%;">
 
-        <section id="about" style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:55px; min-height:65vh;">
+        <section id="about"
+            style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:55px; min-height:65vh;">
 
             <!-- LEFT: INTRODUCTION -->
             <div style="flex:1 1 400px;">
 
-                <p style="color:#38bdf8; font-size:14px; font-weight:bold; letter-spacing:4px; text-transform:uppercase;">
+                <p
+                    style="color:#38bdf8; font-size:14px; font-weight:bold; letter-spacing:4px; text-transform:uppercase;">
                     Welcome to my world
                 </p>
 
@@ -60,11 +69,13 @@
 
                 <div style="display:flex; flex-wrap:wrap; gap:15px; margin-top:30px;">
 
-                    <a href="#projects" style="display:inline-block; padding:15px 24px; background:#38bdf8; color:#0b1120; font-weight:bold; text-decoration:none; border-radius:8px;">
+                    <a href="#projects"
+                        style="display:inline-block; padding:15px 24px; background:#38bdf8; color:#0b1120; font-weight:bold; text-decoration:none; border-radius:8px;">
                         Explore My Journey ↗
                     </a>
 
-                    <a href="skills.html" style="display:inline-block; padding:14px 24px; border:1px solid #475569; color:#e2e8f0; text-decoration:none; border-radius:8px;">
+                    <a href="skills.html"
+                        style="display:inline-block; padding:14px 24px; border:1px solid #475569; color:#e2e8f0; text-decoration:none; border-radius:8px;">
                         Discover My Skills
                     </a>
 
@@ -75,15 +86,14 @@
             <!-- RIGHT: PROFILE IMAGE -->
             <div style="flex:1 1 280px; display:flex; justify-content:center; align-items:center;">
 
-                <div style="position:relative; padding:12px; border:1px solid #38bdf8; border-radius:24px; background:linear-gradient(135deg,#172554,#164e63); box-shadow:0 0 45px rgba(56,189,248,0.12); max-width:350px; width:100%; box-sizing:border-box;">
+                <div
+                    style="position:relative; padding:12px; border:1px solid #38bdf8; border-radius:24px; background:linear-gradient(135deg,#172554,#164e63); box-shadow:0 0 45px rgba(56,189,248,0.12); max-width:350px; width:100%; box-sizing:border-box;">
 
-                    <img
-                        src="Dev.jpeg"
-                        alt="Portrait of Syed Yasin"
-                        style="display:block; width:100%; aspect-ratio:4/5; object-fit:cover; border-radius:17px;"
-                    >
+                    <img src="Dev.jpeg" alt="Portrait of Syed Yasin"
+                        style="display:block; width:100%; aspect-ratio:4/5; object-fit:cover; border-radius:17px;">
 
-                    <div style="position:absolute; bottom:28px; left:25px; right:25px; padding:16px; background:rgba(11,17,32,0.92); border:1px solid #334155; border-radius:12px;">
+                    <div
+                        style="position:absolute; bottom:28px; left:25px; right:25px; padding:16px; background:rgba(11,17,32,0.92); border:1px solid #334155; border-radius:12px;">
 
                         <p style="margin:0 0 5px; color:#38bdf8; font-size:12px; letter-spacing:2px;">
                             CURRENTLY BUILDING
@@ -102,7 +112,8 @@
         </section>
 
         <!-- QUICK INTRODUCTION CARDS -->
-        <section style="display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:18px; margin:50px 0;">
+        <section
+            style="display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:18px; margin:50px 0;">
 
             <div style="padding:25px; background:#111827; border:1px solid #263449; border-radius:14px;">
                 <p style="margin:0; font-size:13px; color:#38bdf8; letter-spacing:1px;">01 / EDUCATION</p>
@@ -159,7 +170,8 @@
         </section>
 
         <!-- CONTACT -->
-        <section id="contact" style="padding:40px 30px; text-align:center; background:linear-gradient(135deg,#172554,#111827); border:1px solid #334155; border-radius:18px;">
+        <section id="contact"
+            style="padding:40px 30px; text-align:center; background:linear-gradient(135deg,#172554,#111827); border:1px solid #334155; border-radius:18px;">
 
             <p style="color:#38bdf8; letter-spacing:3px; font-size:13px; font-weight:bold;">
                 LET'S CONNECT
@@ -174,7 +186,8 @@
                 and opportunities to learn through real projects.
             </p>
 
-            <a href="https://github.com/yasinSyed-programmer" target="_blank" rel="noopener noreferrer" style="display:inline-block; margin-top:15px; padding:14px 25px; background:#38bdf8; color:#0b1120; font-weight:bold; text-decoration:none; border-radius:8px;">
+            <a href="https://github.com/yasinSyed-programmer" target="_blank" rel="noopener noreferrer"
+                style="display:inline-block; margin-top:15px; padding:14px 25px; background:#38bdf8; color:#0b1120; font-weight:bold; text-decoration:none; border-radius:8px;">
                 Find Me on GitHub ↗
             </a>
 
@@ -183,7 +196,8 @@
     </main>
 
     <!-- FOOTER -->
-    <footer style="margin-top:50px; padding:35px 20px; text-align:center; background:#080d18; border-top:1px solid #263449;">
+    <footer
+        style="margin-top:50px; padding:35px 20px; text-align:center; background:#080d18; border-top:1px solid #263449;">
 
         <h2 style="margin:0; font-size:26px;">
             Syed Yasin<span style="color:#38bdf8;">.</span>
@@ -200,4 +214,5 @@
     </footer>
 
 </body>
+
 </html>
