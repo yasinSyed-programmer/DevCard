@@ -1,0 +1,102 @@
+/* ===== SKILLS PAGE BUTTON HOVER EFFECTS ===== */
+
+button {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+/* Hover effect */
+button.blue:hover {
+    transform: translateY(-5px) scale(1.04);
+    border-color: #38bdf8 !important;
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.35);
+    filter: brightness(1.2);
+}
+
+button.purple:hover {
+    transform: translateY(-5px) scale(1.04);
+    border-color: #475569 !important;
+    box-shadow: 0 0 20px rgba(142, 56, 248, 0.35);
+    filter: brightness(1.2);
+}
+
+button.green:hover {
+    transform: translateY(-5px) scale(1.04);
+    border-color: #34d399 !important;
+    box-shadow: 0 0 20px rgb(21, 158, 106);
+    filter: brightness(1.2);
+}
+
+button.orange:hover {
+    transform: translateY(-5px) scale(1.04);
+    border-color: #fbbf24 !important;
+    box-shadow: 0 0 20px rgba(124, 105, 29, 0.944);
+    filter: brightness(1.2);
+}
+
+section.brand:hover {
+    transform: translateY(-5px) scale(1.04);
+    border-color: #475569 !important;
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.35);
+    filter: brightness(1.2);
+}
+
+/* Click effect */
+/* button:active {
+    transform: scale(0.97);
+} */
+
+/* Keyboard accessibility */
+button.blue:focus-visible {
+    outline: 2px solid #38bdf8;
+    outline-offset: 4px;
+}
+
+button.purple:focus-visible {
+    outline: 2px solid #475569;
+    outline-offset: 4px;
+}
+
+button.green:focus-visible {
+    outline: 2px solid #34d399;
+    outline-offset: 4px;
+}
+
+button.orange:focus-visible {
+    outline: 2px solid #fbbf24;
+    outline-offset: 4px;
+}
+
+section.brand:focus-visible {
+    outline: 2px solid #475569;
+    outline-offset: 4px;
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion:reduce) {
+    button {
+        transition: none;
+    }
+
+    .brand {
+        transition: none;
+    }
+
+}
+
+button.orange:hover {
+    cursor: url("star.cur"), pointer;
+}
+
+button.blue:hover {
+    cursor: url("starBlue.cur"), pointer;
+}
+
+button.green:hover {
+    cursor: url("starGreen.cur"), pointer;
+}
+
+button.purple:hover {
+    cursor: url("starPurple.cur"), pointer;
+}
