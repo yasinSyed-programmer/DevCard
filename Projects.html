@@ -5,327 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>My Projects | Syed Yasin</title>
+    <title>Projects | Syed Yasin</title>
 
-    <style>
-        /* ===== GLOBAL STYLES ===== */
-
-        * {
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background: #071b20;
-            color: #e6fffb;
-        }
-
-        a {
-            text-decoration: none;
-        }
-
-        /* ===== NAVIGATION BAR ===== */
-
-        /* Keep your existing navigation bar here. */
-
-        /* ===== PAGE HEADER ===== */
-
-        .page-header {
-            padding: 75px 8% 60px;
-            text-align: center;
-            background: linear-gradient(135deg,
-                    #073b3a,
-                    #0b5554,
-                    #102b35);
-            border-bottom: 1px solid #226d6b;
-        }
-
-        .eyebrow {
-            color: #5eead4;
-            font-size: 13px;
-            font-weight: bold;
-            letter-spacing: 4px;
-            text-transform: uppercase;
-        }
-
-        .page-header h1 {
-            margin: 18px 0;
-            font-size: clamp(38px, 6vw, 62px);
-        }
-
-        .page-header h1 span {
-            color: #5eead4;
-        }
-
-        .page-header p {
-            max-width: 700px;
-            margin: auto;
-            color: #b5d9d6;
-            line-height: 1.9;
-            font-size: 16px;
-        }
-
-        /* ===== PROJECT SECTION ===== */
-
-        .projects-container {
-            width: 100%;
-            padding: 45px 5%;
-        }
-
-        .section-heading {
-            margin-bottom: 30px;
-        }
-
-        .section-heading h2 {
-            font-size: 28px;
-            color: #ccfbf1;
-        }
-
-        .section-heading p {
-            color: #8eb8b5;
-            line-height: 1.7;
-        }
-
-        /* ===== COMMON PROJECT CARD ===== */
-
-        .project-card {
-            width: 100%;
-            margin-bottom: 28px;
-            padding: 30px;
-            border-radius: 18px;
-            border: 1px solid rgba(255, 255, 255, 0.13);
-
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-
-            transition:
-                transform 0.3s ease,
-                box-shadow 0.3s ease,
-                border-color 0.3s ease;
-        }
-
-        .project-card:hover {
-            transform: translateY(-5px);
-            border-color: #5eead4;
-            box-shadow: 0 12px 35px rgba(45, 212, 191, 0.12);
-        }
-
-        /* ===== PROJECT STATUS ===== */
-
-        .project-status {
-            display: inline-flex;
-            align-items: center;
-            align-self: flex-start;
-            gap: 9px;
-
-            padding: 8px 13px;
-            border-radius: 30px;
-
-            background: rgba(0, 0, 0, 0.22);
-            color: #f0fdfa;
-            font-size: 13px;
-            font-weight: bold;
-        }
-
-        .status-dot {
-            width: 9px;
-            height: 9px;
-            flex-shrink: 0;
-            border-radius: 50%;
-        }
-
-        /* Status colours are independent of card colours */
-
-        .upcoming .status-dot {
-            background: #ff5c67;
-            box-shadow: 0 0 10px rgba(255, 92, 103, 0.65);
-        }
-
-        .development .status-dot {
-            background: #60a5fa;
-            box-shadow: 0 0 10px rgba(96, 165, 250, 0.65);
-        }
-
-        .completed .status-dot {
-            background: #4ade80;
-            box-shadow: 0 0 10px rgba(74, 222, 128, 0.65);
-        }
-
-        /* ===== PROJECT TEXT ===== */
-
-        .project-number {
-            margin: 0;
-            font-size: 13px;
-            letter-spacing: 2px;
-            color: rgba(255, 255, 255, 0.65);
-        }
-
-        .project-card h2 {
-            margin: 0;
-            font-size: clamp(24px, 4vw, 34px);
-        }
-
-        .project-description {
-            max-width: 900px;
-            margin: 0;
-            line-height: 1.9;
-            font-size: 15px;
-            color: rgba(255, 255, 255, 0.85);
-        }
-
-        .project-tech {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        .tech-tag {
-            padding: 7px 12px;
-            border: 1px solid rgba(255, 255, 255, 0.22);
-            border-radius: 6px;
-            font-size: 12px;
-            color: #ffffff;
-            background: rgba(0, 0, 0, 0.12);
-        }
-
-        .project-link {
-            align-self: flex-start;
-            display: inline-block;
-            margin-top: 5px;
-            padding: 12px 18px;
-
-            border: 1px solid rgba(255, 255, 255, 0.5);
-            border-radius: 8px;
-
-            color: #ffffff;
-            font-weight: bold;
-            font-size: 14px;
-
-            transition: background 0.3s ease, color 0.3s ease;
-        }
-
-        .project-link:hover {
-            background: #ffffff;
-            color: #102b35;
-        }
-
-        /* ===== CARD COLOUR THEMES ===== */
-
-        /* RED PROJECT CARD */
-
-        .card-red {
-            background: linear-gradient(120deg, #641e32, #a8324b);
-        }
-
-        /* BLUE PROJECT CARD */
-
-        .card-blue {
-            background: linear-gradient(120deg, #123c65, #176c8b);
-        }
-
-        /* GREEN PROJECT CARD */
-
-        .card-green {
-            background: linear-gradient(120deg, #124b3b, #16836a);
-        }
-
-        /* GOLDEN PROJECT CARD */
-
-        .card-gold {
-            background: linear-gradient(120deg, #684619, #a97825);
-        }
-
-        /* ===== FOOTER ===== */
-
-        footer {
-            padding: 40px 20px;
-            text-align: center;
-            background: #041216;
-            border-top: 1px solid #174b4b;
-        }
-
-        footer h2 {
-            margin: 0 0 10px;
-            font-size: 27px;
-        }
-
-        footer h2 span {
-            color: #5eead4;
-        }
-
-        footer p {
-            margin: 10px 0;
-            color: #91b5b3;
-            font-size: 14px;
-            line-height: 1.8;
-        }
-
-        .linkedin-link {
-            display: inline-block;
-            margin: 12px 0;
-            padding: 11px 19px;
-            color: #5eead4;
-            border: 1px solid #2dd4bf;
-            border-radius: 8px;
-            transition: 0.3s ease;
-        }
-
-        .linkedin-link:hover {
-            background: #2dd4bf;
-            color: #071b20;
-        }
-
-        .copyright {
-            margin-top: 25px;
-            font-size: 12px;
-            color: #648582;
-        }
-
-        /* ===== MOBILE RESPONSIVENESS ===== */
-
-        @media (max-width: 600px) {
-            .page-header {
-                padding: 50px 22px;
-            }
-
-            .projects-container {
-                padding: 30px 16px;
-            }
-
-            .project-card {
-                padding: 22px 18px;
-                border-radius: 14px;
-            }
-
-            .project-card h2 {
-                font-size: 25px;
-            }
-        }
-
-        @media (prefers-reduced-motion: reduce) {
-
-            *,
-            *::before,
-            *::after {
-                scroll-behavior: auto !important;
-                transition: none !important;
-            }
-        }
-    </style>
+    <!-- Link the external CSS file -->
+    <link rel="stylesheet" href="Projects.css">
 </head>
 
 <body>
 
-    <!-- =====================================
-         NAVIGATION BAR
-    ====================================== -->
-
+    <!-- NAVIGATION BAR -->
     <nav
         style="display: flex; justify-content: space-between; align-items: center; padding: 20px 8%; background-color: #1e293b;">
         <a href="index1.html" style="text-decoration: none; color: white; padding: 10px 15px;">Home</a>
@@ -336,222 +24,209 @@
             <a href="Skills.html" style="text-decoration: none; color: white; padding: 10px 15px;">MySkills</a>
             <a href="Projects.html" style="text-decoration: none; color: white; padding: 10px 15px;">Projects</a>
             <a href="#contact" style="text-decoration: none; color: white; padding: 10px 15px;"
-                onclick="showMaintenance()" ; return false;>ContactInfo</a>
+                onclick="showMaintenance(event)" ; return false;>ContactInfo</a>
         </div>
 
     </nav>
 
 
-    <!-- =====================================
-         PAGE HEADER
-    ====================================== -->
-
+    <!-- PAGE HEADER -->
     <header class="page-header">
 
-        <div class="eyebrow">
-            Ideas into Reality
-        </div>
+        <p class="eyebrow">MY WORKSPACE</p>
 
-        <h1>
-            My Projects<span>.</span>
-        </h1>
+        <h1>Projects<span>.</span></h1>
 
-        <p>
-            Every project is a step forward — an opportunity to learn,
-            experiment, solve problems, and turn ideas into something real.
-            Explore what I'm building, what's coming next, and what I've
-            successfully completed.
+        <p class="header-description">
+            Ideas transformed into code, creativity turned into solutions.
+            Explore my projects, follow my progress, and see what I'm building.
         </p>
 
     </header>
 
 
-    <!-- =====================================
-         PROJECT SHOWCASE
-    ====================================== -->
-
+    <!-- PROJECTS SECTION -->
     <main class="projects-container">
 
         <div class="section-heading">
-            <h2>Featured Work</h2>
-
-            <p>
-                A collection of my learning, development, and experiments.
-            </p>
+            <h2>Featured Projects</h2>
+            <p>A collection of my work, experiments, and upcoming ideas.</p>
         </div>
 
+<!--
+        class="project-card card-gold card-green card-blue card-red" 
+        class="project-status completed development upcoming" 
+        Completed
+            Visit Portfolio ↗
+        Under Development
+            Visit Portfolio ↗
+            Preview Unavailable
+        Upcoming
+            Coming Soon ↗
 
-        <!-- PROJECT 01: RED CARD + UPCOMING STATUS -->
+-->
+        <!-- PROJECT 01 : GOLDEN BACKGROUND -->
 
-        <div class="project-card card-red"> <!--red :  #641e32, #a8324b -->
+        <div class="project-card card-gold">
+
+            <div class="project-status completed">
+                <span class="status-dot"></span>
+                Completed
+            </div>
+
+            <p class="project-number">PROJECT 01</p>
+
+            <h2>Personal Portfolio Website</h2>
+
+            <p class="project-description">
+                A personal website showcasing my background, skills,
+                projects, and journey as a Computer Science student
+                specializing in Artificial Intelligence and Machine Learning.
+            </p>
+
+            <div class="tech-stack">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+            </div>
+
+            <a href="index1.html" class="project-link">
+                Visit Portfolio ↗
+            </a>
+
+        </div>
+
+        <!-- PROJECT 02 : GREEN BACKGROUND -->
+
+        <div class="project-card card-blue">
 
             <div class="project-status upcoming">
                 <span class="status-dot"></span>
                 Upcoming
             </div>
 
-            <p class="project-number">PROJECT 01</p>
-
-            <h2>AI-Powered Personal Assistant</h2>
-
-            <p class="project-description">
-                An upcoming project exploring how artificial intelligence
-                can help users organize tasks, access information, and
-                improve everyday productivity.
-            </p>
-
-            <div class="project-tech">
-                <span class="tech-tag">Python</span>
-                <span class="tech-tag">AI</span>
-                <span class="tech-tag">APIs</span>
-            </div>
-
-            <a href="#" class="project-link" onclick="return showMaintenance(event)">
-                Coming Soon ↗
-            </a>
-
-        </div>
-
-
-        <!-- PROJECT 02: BLUE CARD + DEVELOPMENT STATUS -->
-
-        <div class="project-card card-blue"> <!--blue : #123c65, #176c8b -->
-
-            <div class="project-status development">
-                <span class="status-dot"></span>
-                Under Development
-            </div>
-
             <p class="project-number">PROJECT 02</p>
 
-            <h2>Personal Portfolio Website</h2>
+            <h2>Task Management Application</h2>
 
             <p class="project-description">
-                A personal website showcasing my background, technical
-                skills, projects, and learning journey as a CSE student
-                specializing in Artificial Intelligence and Machine Learning.
+                A sample project entry for an application designed
+                to organize tasks, track progress, and help users
+                manage their daily activities efficiently.
             </p>
 
-            <div class="project-tech">
-                <span class="tech-tag">HTML</span>
-                <span class="tech-tag">CSS</span>
-                <span class="tech-tag">JavaScript</span>
+            <div class="tech-stack">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
             </div>
 
-            <a href="index.html" class="project-link">
-                Visit Portfolio ↗
-            </a>
-
-        </div>
-
-
-        <!-- PROJECT 03: GREEN CARD + COMPLETED STATUS -->
-
-        <div class="project-card card-green"> <!--green :  #124b3b, #16836a-->
-
-            <div class="project-status completed">
-                <span class="status-dot"></span>
-                Completed & Deployed
-            </div>
-
-            <p class="project-number">PROJECT 03</p>
-
-            <h2>Example: Task Manager</h2>
-
-            <p class="project-description">
-                A sample project card for a task management application
-                that helps users organize daily activities and track
-                their progress.
-            </p>
-
-            <div class="project-tech">
-                <span class="tech-tag">HTML</span>
-                <span class="tech-tag">CSS</span>
-                <span class="tech-tag">JavaScript</span>
-            </div>
-
-            <a href="#" class="project-link" onclick="return showMaintenance(event)">
+            <a href="#" class="project-link" onclick="showMaintenance(event)">
                 Demo Unavailable
             </a>
 
         </div>
 
 
-        <!-- PROJECT 04: GOLDEN CARD + DEVELOPMENT STATUS -->
 
-        <div class="project-card card-gold"> <!--golden :  #684619, #a97825-->
+        <!-- PROJECT 03 : BLUE BACKGROUND -->
 
-            <div class="project-status development">
+        <div class="project-card card-red">
+
+            <div class="project-status upcoming">
                 <span class="status-dot"></span>
-                Under Development
+                Upcoming
             </div>
 
-            <p class="project-number">PROJECT 04</p>
+            <p class="project-number">PROJECT 03</p>
 
             <h2>Gesture-Based Computer Control</h2>
 
             <p class="project-description">
-                An example showcase for a computer-control project
-                that uses hand gestures to interact with applications
-                and explore alternative input methods.
+                A computer interaction project exploring how hand
+                gestures can control applications using computer vision
+                and real-time gesture recognition.
             </p>
 
-            <div class="project-tech">
-                <span class="tech-tag">Python</span>
-                <span class="tech-tag">MediaPipe</span>
-                <span class="tech-tag">Computer Vision</span>
+            <div class="tech-stack">
+                <span>Python</span>
+                <span>MediaPipe</span>
+                <span>Computer Vision</span>
             </div>
 
-            <a href="#" class="project-link" onclick="return showMaintenance(event)">
+            <a href="#" class="project-link" onclick="showMaintenance(event)">
                 Preview Unavailable
             </a>
 
         </div>
 
+
+        <!-- PROJECT 04 : RED BACKGROUND -->
+
+        <div class="project-card card-red">
+
+            <div class="project-status upcoming">
+                <span class="status-dot"></span>
+                Upcoming
+            </div>
+
+            <p class="project-number">PROJECT 04</p>
+
+            <h2>AI-Powered Personal Assistant</h2>
+
+            <p class="project-description">
+                An upcoming project exploring how artificial intelligence
+                can help users manage tasks, retrieve information, and
+                improve everyday productivity.
+            </p>
+
+            <div class="tech-stack">
+                <span>Python</span>
+                <span>AI</span>
+                <span>APIs</span>
+            </div>
+
+            <a href="#" class="project-link" onclick="showMaintenance(event)">
+                Coming Soon ↗
+            </a>
+
+        </div>
+
+
     </main>
 
 
-    <!-- =====================================
-         FOOTER
-    ====================================== -->
-
-    <footer>
+    <!-- FOOTER -->
+    <footer class="footer">
 
         <h2>Syed Yasin<span>.</span></h2>
 
-        <p>
-            CSE (AI & ML) Student | Aspiring Software Developer
-        </p>
+        <p>CSE (AI & ML) Student | Aspiring Software Developer</p>
 
-        <p>
+        <p class="footer-tagline">
             Learning with purpose. Building with curiosity.
         </p>
 
-        <a href="https://www.linkedin.com/" class="linkedin-link" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="linkedin-link">
             Connect on LinkedIn ↗
         </a>
 
         <p class="copyright">
-            &copy; 2026 Syed Yasin. Built with curiosity and code.
+            &copy; 2026 Syed Yasin. All rights reserved.
         </p>
 
     </footer>
 
 
-    <!-- =====================================
-         JAVASCRIPT
-    ====================================== -->
-
+    <!-- MAINTENANCE NOTIFICATION -->
     <script>
         function showMaintenance(event) {
             event.preventDefault();
 
             alert(
-                "🚧 This project page is currently under maintenance.\n\n" +
+                "🚧 This page is currently under maintenance.\n\n" +
                 "We will get back to you soon. Thank you for your patience!"
             );
-
-            return false;
         }
     </script>
 
