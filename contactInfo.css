@@ -1,4 +1,3 @@
-
 /* ---------- BASIC SETUP ---------- */
 * {
     margin: 0;
@@ -107,7 +106,7 @@ body {
 }
 
 .contact-card:hover {
-    transform: translateX(7px);
+    transform: translateX(45px) translateY(0px) scale(1.15);
     box-shadow: 0 15px 35px #00000035;
 }
 
@@ -160,7 +159,7 @@ body {
     margin-top: 10px;
 }
 
-.social-card p + p {
+.social-card p+p {
     margin-top: 16px;
 }
 
@@ -284,6 +283,7 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
+
     *,
     *::before,
     *::after {
